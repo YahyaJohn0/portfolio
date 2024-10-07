@@ -1,0 +1,118 @@
+/* General Styles */
+.about-container {
+  display: flex;
+  flex-direction: column; /* Change to column for smaller screens */
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* Reduce padding */
+  background-color: #f0f4f8;
+  height: auto; /* Remove 100vh to avoid overflow on small screens */
+}
+
+/* Left Section */
+.about-left {
+  width: 100%; /* Take full width */
+  text-align: center; /* Center text */
+}
+
+.about-left h1 {
+  font-size: 32px; /* Decrease font size for smaller screens */
+  margin-bottom: 15px;
+}
+
+.about-left p {
+  font-size: 16px; /* Adjust font size */
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Contact Info */
+.contact-info {
+  width: 90%; /* Full width for small screens */
+  height: auto; /* Remove fixed height */
+  padding: 10px; /* Add some padding */
+  flex-direction: column;
+  border: 1px solid black; /* Stack items vertically */
+  margin: 50px auto;
+  border-radius:10px ;
+  background-color: #baddff;
+}
+
+
+.contact-info .phone {
+  width: 100%; /* Full width inside container */
+  justify-content: center; /* Center elements */
+  font-size: 18px; /* Adjust font size */
+  margin: 30px 0;
+  
+   /* Add margin between items */
+}
+.contact-info .email{
+  width: 100%; /* Full width inside container */
+  justify-content: center; /* Center elements */
+  font-size: 18px; /* Adjust font size */
+  margin: 10px 0;
+}
+
+
+
+/* Right Section */
+.about-right {
+  display: none; /* Hide the image on smaller screens */
+}
+
+/* Media Queries for larger screens */
+@media screen and (min-width: 600px) {
+  .about-container {
+    flex-direction: row; /* Revert to row layout for larger screens */
+    justify-content: space-between;
+    height: 100vh; /* Add full height back */
+  }
+
+  .about-left {
+    flex: 1;
+  }
+  .contact-info {
+    width: 40%; /* Full width for small screens */
+    height: auto; /* Remove fixed height */
+    padding: 10px; /* Add some padding */
+    flex-direction: column;
+    border: 1px solid black; /* Stack items vertically */
+    margin: 50px auto;
+    border-radius:10px ;
+    background-color: #baddff;
+  }
+  
+  
+  .contact-info .phone {
+    width: 100%; /* Full width inside container */
+    justify-content: center; /* Center elements */
+    font-size: 18px; /* Adjust font size */
+    margin: 30px 0;
+    
+     /* Add margin between items */
+  }
+  .contact-info .email{
+    width: 100%; /* Full width inside container */
+    justify-content: center; /* Center elements */
+    font-size: 18px; /* Adjust font size */
+    margin: 10px 0;
+  }
+  .envelope{
+    
+    padding-left: 40px;
+    padding-right: 30px;
+  }.faphone{
+    padding-right: 40px;
+  }
+
+  
+  .about-right {
+    display: flex; /* Show image again */
+  }
+
+  .about-img {
+    width: 400px; /* Adjust image size for larger screens */
+  }
+
+}

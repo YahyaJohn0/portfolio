@@ -1,0 +1,192 @@
+.home-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  height: 100vh;
+  background-color: #f9f9f9;
+}
+
+/* Left Section Styling */
+.left-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+.left-section .animatetext {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: fadin 3s infinite;
+}
+
+.left-section h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.left-section p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.hire-me-btn {
+  width: 160px;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-left: 30px;
+  font-size: 20px;
+  align-items: center;
+}
+.hire-me-btn .greaterthan {
+  font-size: 13px;
+  color: black;
+}
+
+.hire-me-btn:hover {
+  background-color: #45a049;
+}
+
+/* Center Section Styling */
+.center-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-img {
+  width: 300px;
+  height: 350px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Right Section Styling */
+.right-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 20px;
+}
+
+.experience {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 30px;
+}
+
+.years {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.big-number {
+  font-size: 48px;
+  font-weight: bold;
+  color: #333;
+}
+
+.description {
+  font-size: 18px;
+  color: #777;
+}
+
+@keyframes fadin {
+  0% {
+    width: 0ch;
+  }
+  50% {
+    width: 13ch;
+  }
+  100% {
+    width: 0ch;
+  }
+}
+
+/* Responsive Design for Small Devices (iPhone screen sizes) */
+@media only screen and (max-width: 768px) {
+  .home-container {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: auto;
+    padding: 10px;
+  }
+
+  .left-section, .center-section, .right-section {
+    flex: none;
+    
+    text-align: center;
+    padding: 10px;
+  }
+  .left-section h1 {
+    font-size: 25px;
+    text-align: start;
+  }
+
+  .left-section {
+    margin-bottom: 20px;
+  }
+
+  .center-section {
+    margin-bottom: 20px;
+  }
+
+  .experience {
+    align-items: center;
+    margin-bottom: 30px;
+    border:  none;
+    border-radius: 5px;
+  }
+ .profile-img{
+  
+margin-right: 10px;
+ }
+ .left-section .animatetext{
+ font-size: 25px;
+ overflow: hidden;
+  white-space: nowrap;
+  animation: fadin 3s infinite;
+ }
+
+  .big-number {
+    font-size: 36px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  @keyframes fadin {
+    0% {
+      width: 0ch;
+    }
+    50% {
+      width: 11.5ch;
+    }
+    100% {
+      width: 0ch;
+    }
+  
+}
+}

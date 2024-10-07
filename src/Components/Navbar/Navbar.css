@@ -1,0 +1,92 @@
+/* Base styles for larger screens (like laptops) */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+}
+
+.logo {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav-links li {
+  margin: 0 15px;
+  color: white;
+  cursor: pointer;
+}
+
+.nav-links li:hover {
+  text-decoration: underline;
+}
+
+.nav-button {
+  padding: 8px 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.nav-button:hover {
+  background-color: #45a049;
+}
+
+.menu-bar {
+  display: none;
+ 
+}
+
+/* Responsive design for smaller screens (like iPhones) */
+@media (max-width: 600px) {
+  .navbar {
+    position: relative;
+  }
+  /* Hide the navigation links by default on small screens */
+  .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 30px;
+      left: 0;
+      right: 0;
+      background-color: #333;
+      justify-content: start;
+      align-items: center;
+      height: 30vh;
+      border-radius: 5px;
+      font-size: larger;
+      padding-top:10px ;
+  }
+  
+
+  /* Show the nav links when bar is clicked */
+  .nav-links.active {
+      display: flex;
+      
+  }
+  .nav-links li{
+    margin-top: 5px;
+  }
+  .nav-links li:focus{
+    color:#45a049;
+  }
+  /* Display the hamburger menu */
+  .menu-bar {
+      display: block;
+      font-size: 25px;
+      color: white;
+      cursor: pointer;
+  }
+}
