@@ -24,13 +24,13 @@ const Footer = () => {
 
       
       <div className="footer-right">
-        <a href="https://facebook.com/share/3iggzfhgWkEuz/" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.facebook.com/share/n6bjF6P9V3RgjbMj/" target="_blank" rel="noopener noreferrer">
         <FontAwesomeIcon icon={faFacebook} />
         </a>
         <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faTwitter} />
         </a>
-        <a href="https://linkedin.com/in/yahyakhan" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.linkedin.com/in/yahya-khan-a4b557321?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app " target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faLinkedin} />
         </a>
         <a href="https://github.com/YahyaJohn0" target="_blank" rel="noopener noreferrer">

@@ -189,4 +189,27 @@ margin-right: 10px;
     }
   
 }
+.left-section p {
+  font-size: 18px;
+  margin-top: 40px;
+}
+.hire-me-btn {
+  width: 100px;
+  margin-top: 15px;
+  font-size: 17px;
+  align-items: center;
+}
+.hire-me-btn .greaterthan {
+  display: none;
+}
+
+
+.left-section h1 {
+  font-size: 17px;
+  margin-top: 10px;
+}
+.left-section .animatetext {
+ font-size: 14px;
+}
+
 }

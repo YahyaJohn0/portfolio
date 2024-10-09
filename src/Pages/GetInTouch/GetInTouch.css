@@ -144,6 +144,7 @@
   
     .contact-form {
       width: 100%;
+      padding-right: 20%;
     }
   
     .contact-form input, .contact-form textarea {

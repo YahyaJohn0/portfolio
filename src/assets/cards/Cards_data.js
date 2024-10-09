@@ -1,34 +1,34 @@
-import card_img1 from './card1.jpg';
-import card_img2 from './card2.jpg';
-import card_img3 from './card3.jpg';
-import card_img4 from './card4.jpg';
-import card_img5 from './card5.jpg';
-import card_img6 from './card6.jpg';
+import calculator from './calculator.jpg';
+import ecommerce from './ecommerce.jpg';
+import Gallery from './Gallery.jpg';
+import games from './games.jpg';
+import musicplayer from './musicplayer.jpg';
+import netflix from './netflix.jpg';
 
 const cards_data = [
     {
-        image:card_img1,
-        name:"Kung Fu Panda"
+        image:calculator,
+        name:"calculator"
     },
     {
-        image:card_img2,
-        name:"Squid Game"
+        image:ecommerce,
+        name:"ecommerce"
     },
     {
-        image:card_img3,
-        name:"Squid Challange"
+        image:Gallery,
+        name:"Gallery"
     },
     {
-        image:card_img4,
-        name:"Jawan"
+        image:games,
+        name:"games"
     },
     {
-        image:card_img5,
-        name:"The Ghost"
+        image:musicplayer,
+        name:"musicplayer"
     },
     {
-        image:card_img6,
-        name:"Lucifer"
+        image:netflix,
+        name:"netflix"
     }
 
 ]

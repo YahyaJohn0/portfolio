@@ -28,31 +28,32 @@
 
 /* Contact Info */
 .contact-info {
-  width: 90%; /* Full width for small screens */
+  width: 88%; /* Full width for small screens */
   height: auto; /* Remove fixed height */
-  padding: 10px; /* Add some padding */
+ /* Add some padding */
   flex-direction: column;
   border: 1px solid black; /* Stack items vertically */
   margin: 50px auto;
   border-radius:10px ;
   background-color: #baddff;
+  padding: 20px;
 }
 
+.phone {
 
-.contact-info .phone {
-  width: 100%; /* Full width inside container */
-  justify-content: center; /* Center elements */
-  font-size: 18px; /* Adjust font size */
-  margin: 30px 0;
-  
-   /* Add margin between items */
+  display: flex;
+  gap: 10px;  
+ 
 }
-.contact-info .email{
-  width: 100%; /* Full width inside container */
-  justify-content: center; /* Center elements */
-  font-size: 18px; /* Adjust font size */
-  margin: 10px 0;
+.faphone{
+  margin-right: 50px;
 }
+.email{
+display: flex;
+  gap: 10px; 
+  margin-bottom: 10px;
+}
+
 
 
 
@@ -84,29 +85,18 @@
   }
   
   
-  .contact-info .phone {
-    width: 100%; /* Full width inside container */
-    justify-content: center; /* Center elements */
-    font-size: 18px; /* Adjust font size */
-    margin: 30px 0;
+  .phone {
+    display: flex;
+    gap: 30px;  
     
-     /* Add margin between items */
   }
-  .contact-info .email{
-    width: 100%; /* Full width inside container */
-    justify-content: center; /* Center elements */
-    font-size: 18px; /* Adjust font size */
-    margin: 10px 0;
+  .faphone{
+    margin-right: 50px;
   }
-  .envelope{
-    
-    padding-left: 40px;
-    padding-right: 30px;
-  }.faphone{
-    padding-right: 40px;
-  }
-
-  
+.email{
+  display: flex;
+    gap: 30px; 
+}
   .about-right {
     display: flex; /* Show image again */
   }

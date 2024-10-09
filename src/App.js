@@ -6,7 +6,7 @@ import Projects from './Pages/Project/Projects';
 import Contact from './Pages/Contact/Contact';
 import Service from './Pages/Service/Service';
 import GetInTouch from './Pages/GetInTouch/GetInTouch';
-import './App.css'
+
 
 const App = () => {
   return (

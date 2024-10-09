@@ -14,8 +14,8 @@ const About = () => {
           My expertise spans across front-end and back-end technologies, allowing me to deliver full-stack solutions.
         </p>
         <div className="contact-info">
-          <div className="email"><FontAwesomeIcon icon={faEnvelope}  className='envelope'/>yk5550950@gmail.com</div>
-          <div className="phone"> <FontAwesomeIcon icon={faPhone} className='faphone'/> +923255096511</div>
+          <div className="email"><span><FontAwesomeIcon icon={faEnvelope}  className='envelope'/></span><span>yk5550950@gmail.com</span></div>
+          <div className="phone"> <span ><FontAwesomeIcon icon={faPhone} className='faphone'/></span><span> +923255096511</span></div>
         </div>
       </div>
       <div className="about-right">
