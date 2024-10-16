@@ -5,7 +5,7 @@ const Projects = () => {
 
   return (
     <div className="projects-container">
-      <h1>Explore My Popular Projects</h1>
+      <h1>Explore My Recent Projects</h1>
       <div className="projects-grid">
         {cards_data.map((data,index) => (
           <div key={index} className="project-item">

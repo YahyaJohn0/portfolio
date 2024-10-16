@@ -4,13 +4,18 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: #333;
+  background-color:  #3B82F6; /* Original background color for larger screens */
 }
 
 .logo {
   color: white;
   font-size: 24px;
   font-weight: bold;
+}
+.logo img {
+  height: 50px;
+  border-radius: 50%;
+  
 }
 
 .nav-links {
@@ -32,7 +37,7 @@
 
 .nav-button {
   padding: 8px 16px;
-  background-color: #4CAF50;
+  background-color: #e41919;
   color: white;
   border: none;
   border-radius: 5px;
@@ -40,53 +45,56 @@
 }
 
 .nav-button:hover {
-  background-color: #45a049;
+  background-color: #fa0909;
+  cursor: pointer;
 }
 
 .menu-bar {
   display: none;
- 
 }
 
 /* Responsive design for smaller screens (like iPhones) */
 @media (max-width: 600px) {
   .navbar {
     position: relative;
+    background-color: #3B82F6; /* Blue-500 equivalent */
   }
+
   /* Hide the navigation links by default on small screens */
   .nav-links {
-      display: none;
-      flex-direction: column;
-      position: absolute;
-      top: 30px;
-      left: 0;
-      right: 0;
-      background-color: #333;
-      justify-content: start;
-      align-items: center;
-      height: 30vh;
-      border-radius: 5px;
-      font-size: larger;
-      padding-top:10px ;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    background-color: #3B82F6; /* Blue-500 equivalent */
+    justify-content: center; /* Centered vertically */
+    align-items: flex-start; /* Align to left */
+    height: auto;
+    border-radius: 5px;
+    padding: 10px;
   }
-  
 
-  /* Show the nav links when bar is clicked */
+  /* Show the nav links when the bar is clicked */
   .nav-links.active {
-      display: flex;
-      
+    display: flex;
   }
-  .nav-links li{
-    margin-top: 5px;
+
+  .nav-links li {
+    margin-top: 10px; /* Adjusted margin for vertical layout */
+    color: white;
   }
-  .nav-links li:focus{
-    color:#45a049;
+
+  .nav-links li:hover {
+    color: #45a049; /* Change color on hover */
   }
-  /* Display the hamburger menu */
+
   .menu-bar {
-      display: block;
-      font-size: 25px;
-      color: white;
-      cursor: pointer;
+    display: block;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
   }
 }

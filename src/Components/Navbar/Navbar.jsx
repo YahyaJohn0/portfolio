@@ -4,6 +4,7 @@ import './Navbar.css';
 import { useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+import yahyalogo from '../../assets/Gold Luxury Initial Circle Logo.png'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -35,7 +36,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <div className="logo">Logo</div>
+      <div className="logo"><img src={yahyalogo}  alt="" /></div>
       <ul className={`nav-links ${isOpen ? 'active' : ''}`}>
         <li onClick={goToHomePage}>Home</li>
         <li onClick={goToAboutPage}>About</li>

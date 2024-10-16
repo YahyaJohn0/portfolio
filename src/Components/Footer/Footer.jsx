@@ -2,13 +2,14 @@ import React from 'react';
 import './Footer.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faTwitter, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+import Logo from '../../assets/yahyalogo.png'
 
 const Footer = () => {
   return (
     <footer className="footer-container">
       
       <div className="footer-left">
-        <h2>YourLogo</h2>
+        <img src={Logo} alt="" />
         <p>© 2024 Your Company Name. All rights reserved.</p>
       </div>
 

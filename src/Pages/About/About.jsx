@@ -1,8 +1,7 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope ,faPhone } from '@fortawesome/free-solid-svg-icons';
+
 import './About.css';
-import Logo from '../../assets/yahya.jpg'
+import Logo from '../../assets/IMG-20240712-WA0067.jpg'
 const About = () => {
   return (
     <div className="about-container">
@@ -10,13 +9,14 @@ const About = () => {
       <div className="about-left">
         <h1>About Me</h1>
         <p>
-          I'm YahyaJohn, a developer with a passion for creating beautiful and efficient web applications.
-          My expertise spans across front-end and back-end technologies, allowing me to deliver full-stack solutions.
+        I'm Yahya Khan, a front-end developer with a Bachelor’s degree in Information Technology,
+         passionate about creating engaging and user-friendly web experiences. Proficient in HTML, CSS,
+          and JavaScript, I thrive on transforming ideas into dynamic, responsive applications.
+           My recent project, a Netflix clone app, showcases my ability to blend creativity with technical skills.
+            I’m eager to expand my expertise in back-end development and frameworks like React,
+             while continually exploring design principles to enhance my portfolio.
+              Let's connect and collaborate on exciting projects!
         </p>
-        <div className="contact-info">
-          <div className="email"><span><FontAwesomeIcon icon={faEnvelope}  className='envelope'/></span><span>yk5550950@gmail.com</span></div>
-          <div className="phone"> <span ><FontAwesomeIcon icon={faPhone} className='faphone'/></span><span> +923255096511</span></div>
-        </div>
       </div>
       <div className="about-right">
         <img 
